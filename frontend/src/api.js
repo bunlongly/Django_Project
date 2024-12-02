@@ -14,10 +14,10 @@ api.interceptors.request.use(
       // Correct string interpolation using backticks (`) for template literals
       config.headers.Authorization = `Bearer ${token}`;
     }
-    return config; // Don't forget to return the config object here!
+    return config;
   },
   (error) => {
-    return Promise.reject(error); // Handle any request errors
+    return Promise.reject(error);
   }
 );
 
